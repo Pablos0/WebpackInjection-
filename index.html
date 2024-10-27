@@ -10,10 +10,10 @@
     href="https://cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css"
   />
   <head>
-    <title>Fresh Fruit Marketplace</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta
       name="description"
-      content="Find the freshest and highest quality fruits from local and global sources at our fruit marketplace. Shop for a variety of seasonal and exotic fruits today!"
+      content= "<%= htmlWebpackPlugin.options.metaDesc %>"
     />
   </head>
   <body>
@@ -30,14 +30,14 @@
         </ol>
       </div>
       <div class="row">
-        <h1 class="text-center">Fruit Marketplace</h1>
+        <h1 class="text-center"><%= htmlWebpackPlugin.options.header %></h1>
       </div>
       <div class="row">
         <div class="col-lg-3">
           <div class="text-center">
             <div class="product-img">
               <img
-                src="images/banana.jpg"
+                src=<%=require('./images/banana.jpg')%>
                 alt="A bunch of ripe yellow bananas on a white background."
               />
               <div class="product-name">
@@ -58,7 +58,7 @@
         <div class="col-lg-3">
           <div class="text-center">
             <div class="product-img">
-              <img src="images/apples.jpg" />
+              <img src=<%=require('./images/apples.jpg')%> />
               <div class="product-name">
                 <h2 class="text-white">
                   <a class="product-link" href="#">Apples</a>
@@ -77,7 +77,7 @@
         <div class="col-lg-3">
           <div class="text-center">
             <div class="product-img">
-              <img src="images/oranges.jpg" />
+              <img src=<%=require('./images/oranges.jpg')%> />
               <div class="product-name">
                 <h2 class="text-white">
                   <a class="product-link" href="#">Oranges</a>
@@ -95,7 +95,7 @@
         <div class="col-lg-3">
           <div class="text-center">
             <div class="product-img">
-              <img src="images/strawberries.jpg" />
+              <img src=<%=require('./images/strawberries.jpg')%> />
               <div class="product-name">
                 <h2 class="text-white">
                   <a class="product-link" href="#">Strawberries</a>
@@ -114,7 +114,7 @@
         <div class="col-lg-3">
           <div class="text-center">
             <div class="product-img">
-              <img src="images/grapes.jpg" />
+              <img src=<%=require('./images/grapes.jpg')%> />
               <div class="product-name">
                 <h2 class="text-white">
                   <a class="product-link" href="#">Grapes</a>
